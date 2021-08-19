@@ -26,12 +26,35 @@ span {
     padding-left:75px;
 }
 
+/* table grid */
+
+.order-grid {
+    display: grid;
+    border: black;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 20px 5px 20px;
+ 
+
+}
+.music-img {
+    grid-column: 1/3;
+}
+tbody {
+   /* What is this? Dev tools point at it */ 
+}
+/* table grid */
+
+
+/*
 table, th, td {
     margin-left: 10px;
     text-align: center;
     align-items: center;
     border-radius: 25px;
   }
+*/
+
+
 
 h1 {
     font-size: large;
