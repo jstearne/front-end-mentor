@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    max-width: 450px;
     position: absolute;
     
 }
@@ -28,38 +28,37 @@ span {
 
 /* table grid */
 
+div {
+    background-color: white;
+
+}
 .order-grid {
     display: grid;
-    border: black;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 20px 20px 20px;
-    
-
+    grid-template-rows: 20px 25px 20px;
 }
 .music-img {
     grid-column: 1/2;
-    grid-row: 1/2
+    grid-row: 1/2;
+    border-radius: 90%;
+}
+.annual-plan {
+    font-weight: 700;
+    text-align: left;
+    line-height: 150%;
+}
+.cost {
+    text-align: left;
+    line-height: 0%;
 }
 
-div {
-    display:block
+a {
+    background-color: white;
 }
-tbody {
-   /* What is this? Dev tools point at it */ 
+
+svg {
+    border-radius: 15px 15px 0 0;
 }
-/* table grid */
-
-
-/*
-table, th, td {
-    margin-left: 10px;
-    text-align: center;
-    align-items: center;
-    border-radius: 25px;
-  }
-*/
-
-
 
 h1 {
     font-size: large;
@@ -73,6 +72,8 @@ h2 {
 p {
     background-color: white;
     font-weight: 400;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 a {
     font-weight: bold;
@@ -99,4 +100,7 @@ button {
 }
 #bold-td {
     font-weight: bold;
+}
+.dummy-link, .attribution {
+    background-color: hsl(225, 100%, 94%);
 }
