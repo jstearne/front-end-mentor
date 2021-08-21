@@ -36,6 +36,7 @@
       overflow: hidden;
       display: flex;
       width: 55%;
+      flex-wrap: nowrap;
     }
     .slider-c img {
       transform: translateX(0%); /*  */
@@ -47,6 +48,12 @@
       top: 0;
       left: 0;
     }
+    .arrow-cta {
+      display: flex;
+      width: 10em;
+      align-items: center;
+      color: hsl(0, 0%, 27%);;
+    } 
 
     :root {
       --darkGray: hsl(0, 0%, 63%);
@@ -69,24 +76,27 @@
   <main>
 <div class="slider-c">
   <img src="images/desktop-image-hero-1.jpg">
+  <img src="images/desktop-image-hero-2.jpg">
+  <img src="images/desktop-image-hero-3.jpg">
 </div>
 
-
   </main>
-
-
 
 
 <h1>Header</h1>
 <h2>Header</h2>
 <h3>Header</h3>
-  Discover innovative ways to decorate
+  <h1>Discover innovative ways to decorate</h1>
 
   We provide unmatched quality, comfort, and style for property owners across the country. 
   Our experts combine form and function in bringing your vision to life. Create a room in your 
   own style with our collection and make your property a reflection of you and what you love.
 
-  Shop now
+
+  <a class="arrow-cta" href="#">
+    <p> S H O P N O W</p><img src="images/icon-arrow.svg">
+  </a>
+
 
   We are available all across the globe
 
@@ -104,7 +114,7 @@
 
   Shop now
 
-  About our furniture
+  <h2>About our furniture</h2>
 
   Our multifunctional collection blends design and function to suit your individual taste.
   Make each room unique, or pick a cohesive theme that best express your interests and what
