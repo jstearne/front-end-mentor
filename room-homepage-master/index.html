@@ -30,9 +30,23 @@
     a {
       padding: 3em 2em 0em 2em;
       text-decoration: none;
-      color: hsl(0, 0%, 63%);
+      color: white;
     }
-
+    .slider-c { /* sliding image display, hide non-displayed images*/
+      overflow: hidden;
+      display: flex;
+      width: 55%;
+    }
+    .slider-c img {
+      transform: translateX(0%); /*  */
+    }
+    nav {
+      padding: 3em 2em 0em 2em;
+      z-index: 99;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
 
     :root {
       --darkGray: hsl(0, 0%, 63%);
@@ -51,7 +65,18 @@
   <a href="#">About</a>
   <a href="#">Contact</a>
   </nav>
- 
+
+  <main>
+<div class="slider-c">
+  <img src="images/desktop-image-hero-1.jpg">
+</div>
+
+
+  </main>
+
+
+
+
 <h1>Header</h1>
 <h2>Header</h2>
 <h3>Header</h3>
